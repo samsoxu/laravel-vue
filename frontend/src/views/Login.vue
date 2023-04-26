@@ -1,15 +1,5 @@
 <template>
-    <div
-        class="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8"
-    >
-        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-            <h1
-                class="mt-10 text-center text-3xl font-bold leading-9 tracking-tight text-gray-900"
-            >
-                Sign in to your account
-            </h1>
-        </div>
-
+    <GuestLayout title="Sign in to your account">
         <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
             <form class="space-y-2" action="#" method="POST">
                 <div>
@@ -58,13 +48,11 @@
                 </div>
             </form>
         </div>
-    </div>
+    </GuestLayout>
 </template>
 
-<script>
-export default {
-    name: "Login",
-};
+<script setup>
+import GuestLayout from "../components/GuestLayout.vue";
 </script>
 
 <style scoped></style>
